@@ -1,16 +1,15 @@
 import React from "react";
-import XHRTest from "./components/test/XHRTest";
-import WebSocketTest from "./components/test/WebSocketTest";
-import ReduxTest from "./components/test/ReduxTest";
+import Router from "./Router";
+import NavBar from "./components/NavBar";
 
 const App = () => {
     return (
-        <div className='container'>
-            <h1>Hello, World!</h1>
-            <XHRTest />
-            <WebSocketTest />
-            <ReduxTest />
-        </div>
+        <>
+            <NavBar />
+            <div className="container">
+                <Router />
+            </div>
+        </>
     );
 };
 
