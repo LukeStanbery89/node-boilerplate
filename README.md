@@ -1,6 +1,16 @@
-# My Node App
+# Node Boilerplate Application
 
-Description of My Node App
+This is a template repository for an ERN ([Express.js](https://expressjs.com/), [React.js](https://react.dev/), [Node.js](https://nodejs.org/en)) stack application. This template includes boilerplate code for:
+- Node.js backend
+- React.js frontend
+- [Redux](https://redux.js.org/) for frontend global state management
+- Build pipeline (using [Webpack](https://webpack.js.org/))
+- Unit tests ([Jest](https://jestjs.io/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/))
+- WebSockets (using [Socket.IO](https://socket.io/))
+- Backend event emission framework (using Node's [EventEmitter API](https://nodejs.org/api/events.html))
+- Development server with hot reloading
+- PR build pipeline (using [Github Actions](https://github.com/features/actions))
+- Git hooks (using [Husky](https://typicode.github.io/husky/))
 
 ## Installation
 
@@ -10,7 +20,7 @@ To get started, follow these steps:
 
    ```bash
    git clone <repository-url>
-   cd node-boilerplate
+   cd <repository-dir>
    ```
 
 2. Install the dependencies:
