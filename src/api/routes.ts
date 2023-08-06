@@ -12,7 +12,7 @@ router.get("/api/data", (req: Request, res: Response) => {
 });
 
 // Serve the React app
-router.get("*", (req, res) => {
+router.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "../client/build", "index.html"));
 });
 
