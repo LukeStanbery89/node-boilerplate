@@ -19,7 +19,13 @@ module.exports = {
             {
                 test: /\.ts$/,
                 loader: "ts-loader",
-                exclude: [/node_modules/, /client_OLD/], // Exclude both node_modules and client_OLD
+                exclude: [/node_modules/],
+            },
+            {
+                // Aggregates event handlers into a single module
+                test: /handlers\/index.ts$/,
+                loader: "@lukestanbery/meta-importer",
+                exclude: [/node_modules/],
             },
         ],
     },
